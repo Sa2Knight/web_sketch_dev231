@@ -5,6 +5,32 @@ body {
   font-size: 14px;
 }
 
+.icon-btn {
+  padding: 7 10 7 10;
+  font-size: 100%;
+  color: #666;
+  background-color: white;
+  border: 1px solid #666;
+  border-radius: 18px;
+  span {
+    padding-left: 5px;
+  }
+}
+
+.mark {
+  text-align: center;
+  color: white;
+  padding: 0 10 0 10;
+  border-radius: 20px;
+}
+
+.notification {
+  color: white;
+  background-color: #3b9dbd;
+  padding: 2 4 2 4;
+  border-radius: 20px;
+}
+
 .header {
   background-color: #ebf0f2;
   * {
@@ -75,16 +101,19 @@ body {
   }
 
   .content {
+    padding: 0 30 0 30;
     margin-left: 200px;
     background-color: #f0f0f0;
 
     .project {
+      margin-left: -30;
+      margin-right: -30px;
+      padding-left: 30px;
       height: 50px;
       background-color: white;
     }
 
     .issues {
-      padding: 0 30 0 30;
       table {
         width: 100%;
         border: solid 1px #c2c2c2;
@@ -119,12 +148,6 @@ body {
           td {
             padding: 5px 15px 5px 15px;
           }
-          td > .mark {
-            text-align: center;
-            color: white;
-            padding: 0 10 0 10;
-            border-radius: 20px;
-          }
           td > .task {
             background-color: #b0be3c;
           }
@@ -141,7 +164,15 @@ body {
         }
       }
     }
-
+    .issues-helper {
+      padding: 15 0 15 0;
+      .pager {
+        float: left;
+      }
+      .side-buttons {
+        text-align: right;
+      }
+    }
   }
 
 }
