@@ -17,6 +17,28 @@ body {
     float: left;
     background-color: #3b9dbd;
     background-image: url('../images/bg_dot.png');
+    color: white;
+    .burger {
+      text-align: right;
+      .fa {
+        padding: 10 20 10 0;
+      }
+    }
+    ul.sidemenu {
+      padding-left: 0;
+      font-size: 95%;
+      list-style-type: none;
+      li {
+        padding-left: 12px;
+        margin: 20 0 20 0;
+        .fa {
+          width: 20px;
+        }
+        span {
+          padding-left: 15px;
+        }
+      }
+    }
   }
 
   .content {
