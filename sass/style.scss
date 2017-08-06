@@ -31,6 +31,12 @@ body {
   border-radius: 20px;
 }
 
+img {
+  width: 30px;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
 .header {
   background-color: #ebf0f2;
   * {
@@ -45,10 +51,6 @@ body {
       display: inline-block;
       margin-left: 12px;
     }
-  }
-  img {
-    width: 30px;
-    max-height: 100%;
   }
   img.logo {
     padding-left: 20px;
@@ -106,11 +108,27 @@ body {
     background-color: #f0f0f0;
 
     .project {
-      margin-left: -30;
-      margin-right: -30px;
-      padding-left: 30px;
-      height: 50px;
+      margin: 0 -30 0 -30;
+      padding: 10 0 10 30;
+      height: 30px;
       background-color: white;
+      border-top:    1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      img.logo {
+        margin-bottom: 5px;
+      }
+      .project-name {
+        font-size: 120%;
+      }
+      .project-key {
+        font-size: 90%;
+      }
+      .search {
+        position: absolute;
+        margin-top: 7px;
+        right: 25px;
+        color: gray;
+      }
     }
 
     .issues {
