@@ -47,7 +47,9 @@ a {
 }
 
 .header {
+  max-height: 50px;
   background-color: #ebf0f2;
+  overflow: hidden;
   * {
     vertical-align: middle;
   }
