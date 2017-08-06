@@ -59,31 +59,24 @@
           <div class="status">
             状態: 全て 未対応 処理中 処理済み 完了 完了以外
           </div>
-          <div class="filteres">
-            <div class="filter-group">
-              <label>カテゴリー</label>
-              <select class="filter-control">
-                <option>すべて</option>
-              </select>
-            </div>
-            <div class="filter-group">
-              <label>カテゴリー</label>
-              <select class="filter-control">
-                <option>すべて</option>
-              </select>
-            </div>
-            <div class="filter-group">
-              <label>カテゴリー</label>
-              <select class="filter-control">
-                <option>すべて</option>
-              </select>
-              (自分を担当に)
-            </div>
-            <div class="filter-group">
-              <label>キーワード</label>
-              <input type="text" class="filter-control" placeholder="キーワードを入力">
-            </div>
-          </div>
+          <ul class="filters">
+            <li class="filter-group">
+              <div>カテゴリー</div>
+              <div class="filter-selecter"><div class="selecter-item">すべて<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div></div>
+            </li>
+            <li class="filter-group">
+              <div>マイルストーン</div>
+              <div class="filter-selecter"><div class="selecter-item">すべて<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div></div>
+            </li>
+            <li class="filter-group">
+              <div>担当者</div>
+              <div class="filter-selecter"><div class="selecter-item">すべて<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div></div>
+            </li>
+            <li class="filter-group">
+              <div>キーワード</div>
+              <input type="text" class="filter-selecter" placeholder="キーワードを入力">
+            </li>
+          </ul>
         </div>
         <div class="issues-helper">
           <div class="pager">全3件中1件〜3件を表示 <span class="notification">1</span></div>

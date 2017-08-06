@@ -37,6 +37,10 @@ img {
   vertical-align: middle;
 }
 
+li {
+  list-style-type: none;
+}
+
 .header {
   background-color: #ebf0f2;
   * {
@@ -45,7 +49,6 @@ img {
   ul {
     padding: 0;
     margin: 10px 0 10px 0;
-    list-style-type: none;
     display: inline-block;
     li {
       display: inline-block;
@@ -88,7 +91,6 @@ img {
     ul.sidemenu {
       padding-left: 0;
       font-size: 95%;
-      list-style-type: none;
       li {
         padding-left: 12px;
         margin: 20 0 20 0;
@@ -128,6 +130,40 @@ img {
         margin-top: 7px;
         right: 25px;
         color: gray;
+      }
+    }
+
+    .filters {
+      display: table;
+      padding: 0;
+      .filter-group {
+        display: table-cell;
+        .filter-selecter {
+          width: 220px;
+          height: 30px;
+          margin: 0 30 0 0;
+          background-color: white;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          .selecter-item {
+            position: relative;
+            font-size: 90%;
+            margin: 5 0 0 5;
+            .fa {
+              position: absolute;
+              top: -3px;
+              right: 5px;
+            }
+          }
+        }
+        .user-icon {
+            color: #ccc;
+            background-color: white;
+            border-radius: 50%;
+        }
+        input[type=text] {
+          height: 34px;
+        }
       }
     }
 
