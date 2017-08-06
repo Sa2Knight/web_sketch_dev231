@@ -41,6 +41,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  color: #00759b;
+  text-decoration: none;
+}
+
 .header {
   background-color: #ebf0f2;
   * {
@@ -133,6 +138,31 @@ li {
       }
     }
 
+    .status {
+      ul.status-list {
+        margin: 0;
+        padding: 0;
+        display: table;
+        li {
+          display: table-cell;
+        }
+        .label {
+          font-size: 95%;
+        }
+        .status-item {
+          padding: 0 10 0 10;
+          a {
+            padding: 5 8 5 8;
+          }
+          a.active {
+            color: white;
+            background-color: #3b9dbd;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
     .filters {
       display: table;
       padding: 0;
@@ -175,21 +205,17 @@ li {
         border-collapse: collapse;
         thead {
           background-color: white;
-          color: #00759b;
           font-size: 85%;
           tr {
             border-bottom: 2px solid #ccc;
           }
           th {
+            font-size: 95%;
             padding: 7px 0px 7px 0px;
           }
         }
         tbody {
           font-size: 80%;
-          a {
-            color: #00759b;
-            text-decoration: none;
-          }
           tr {
             border-collapse: separate;
           }
