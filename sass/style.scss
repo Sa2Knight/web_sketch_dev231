@@ -138,6 +138,48 @@ a {
       }
     }
 
+    .mode {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      margin: 15 0 20 0;
+      span.label {
+        font-size: 120%;
+        margin-right: 20px;
+        .fa {
+          color: #aaa;
+          font-size: 170%;
+          padding-right: 7px;
+        }
+      }
+      ul.mode-list {
+        display: inline-block;
+        vertical-align: middle;
+        margin:  0;
+        padding: 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        li.mode-item {
+          display: table-cell;
+          width: 120px;
+          margin: 0;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          background-color: white;
+          text-align: center;
+        }
+        li.mode-item.active {
+          background-color: #3b9dbd;
+          color: white;
+        }
+      }
+      .side-buttons {
+        position: absolute;
+        top: 12px;
+        right: 0;
+      }
+    }
+
     .status {
       ul.status-list {
         margin: 0;
